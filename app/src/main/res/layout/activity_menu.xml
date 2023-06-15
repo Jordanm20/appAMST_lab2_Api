@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginVertical="70dp"
+            android:text="Menú principal"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnSensores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="revisarSensores"
+            android:text="Control de sensores" />
+
+        <Button
+            android:id="@+id/btnPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historial de pedidos" />
+
+        <Button
+            android:id="@+id/btnPrivatedb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Base privada" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Salir"
+            android:text="Salir" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
